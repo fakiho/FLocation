@@ -1,0 +1,6 @@
+framework module FLocation {
+  umbrella header "FLocation-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - FLocation (0.1.0)
+
+DEPENDENCIES:
+  - FLocation (from `../`)
+
+EXTERNAL SOURCES:
+  FLocation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FLocation: 64d06415a6b86efcd90f9582128dc751b4602ab4
+
+PODFILE CHECKSUM: e2ffe043c139fb69a88e8b302d4ea76fc51b5b7b
+
+COCOAPODS: 1.5.3

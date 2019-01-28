@@ -9,7 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = 'FLocation'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of FLocation.'
+  s.summary          = 'A Location Service to monitor user activity and motion.'
+  s.swift_version = '4.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: 'This Location Service to make it easy for you to monitor the user activty and motion'
                        DESC
 
   s.homepage         = 'https://github.com/fakiho/FLocation'
@@ -28,9 +29,9 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/fakiho/FLocation.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'FLocation/Classes/**/*'
+  s.source_files = 'Classes/**/*'
   
   # s.resource_bundles = {
   #   'FLocation' => ['FLocation/Assets/*.png']

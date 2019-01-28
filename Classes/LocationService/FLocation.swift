@@ -44,29 +44,29 @@ class FLocation: NSObject {
     let motionActivityManager = CMMotionActivityManager()
     var CLocationManager = LocationManager()
     
-    private var _CustomLocation: CLLocation!
-    private var _startDate: Date!
-    private var _traveledDistance: Double = 0
-    private var _startLocation: CLLocation!
-    private var _lastLocation: CLLocation!
-    private var _tempLocarion: CLLocation!
-    private var _startDateRegion: Date!
-    private let _cal = Calendar.current
-    private var _currentSpeed = 0
-    private var _speedArray: [Double] = []
-    private var _monitoredRegions:[CLCircularRegion] = []
+      var _CustomLocation: CLLocation!
+      var _startDate: Date!
+      var _traveledDistance: Double = 0
+      var _startLocation: CLLocation!
+      var _lastLocation: CLLocation!
+      var _tempLocarion: CLLocation!
+      var _startDateRegion: Date!
+      let _cal = Calendar.current
+      var _currentSpeed = 0
+      var _speedArray: [Double] = []
+      var _monitoredRegions:[CLCircularRegion] = []
     
-    private var _totalDistance = UserDefaults.standard.double(forKey: MonitorKeys.TotalKM.rawValue)
-    private var _totalHrs = UserDefaults.standard.double(forKey: MonitorKeys.TotalHrs.rawValue)
-    private var _avgSpeed = UserDefaults.standard.double(forKey: MonitorKeys.AVGSpeed.rawValue)
-    private var _topSpeed = UserDefaults.standard.double(forKey: MonitorKeys.TopSpeed.rawValue)
-    private var _longestHrs = UserDefaults.standard.double(forKey: MonitorKeys.LongHours.rawValue)
-    private var _longestDistance = UserDefaults.standard.double(forKey: MonitorKeys.LongDistance.rawValue)
-    private var _locationLongHrs = UserDefaults.standard.string(forKey: MonitorKeys.LocationLongHrs.rawValue)
-    private var _locationLongDistanceName = UserDefaults.standard.string(forKey: MonitorKeys.LocationLongDistance.rawValue)
+      var _totalDistance = UserDefaults.standard.double(forKey: MonitorKeys.TotalKM.rawValue)
+      var _totalHrs = UserDefaults.standard.double(forKey: MonitorKeys.TotalHrs.rawValue)
+      var _avgSpeed = UserDefaults.standard.double(forKey: MonitorKeys.AVGSpeed.rawValue)
+      var _topSpeed = UserDefaults.standard.double(forKey: MonitorKeys.TopSpeed.rawValue)
+      var _longestHrs = UserDefaults.standard.double(forKey: MonitorKeys.LongHours.rawValue)
+      var _longestDistance = UserDefaults.standard.double(forKey: MonitorKeys.LongDistance.rawValue)
+      var _locationLongHrs = UserDefaults.standard.string(forKey: MonitorKeys.LocationLongHrs.rawValue)
+      var _locationLongDistanceName = UserDefaults.standard.string(forKey: MonitorKeys.LocationLongDistance.rawValue)
     
     
-    private func createCustomLoction(latitude:Double = 0, longitude: Double = 0) -> CLLocation {
+      func createCustomLoction(latitude:Double = 0, longitude: Double = 0) -> CLLocation {
         let latitudeDouble  = latitude
         let longitudeDouble = longitude
         
@@ -290,7 +290,7 @@ extension FLocation {
     }
     
     
-    private func setAvgSpeed(speed: CLLocationSpeed){
+      func setAvgSpeed(speed: CLLocationSpeed){
         self._avgSpeed = (speed / 100)
         if self._avgSpeed > 0 {
             UserDefaults.standard.set(self._avgSpeed, forKey: MonitorKeys.AVGSpeed.rawValue)
@@ -299,7 +299,7 @@ extension FLocation {
         }
     }
     
-    private func setDate() {
+      func setDate() {
         if self._startDate == nil {
             self._startDate = Date()
         }
@@ -310,7 +310,7 @@ extension FLocation {
         UserDefaults.standard.set(self._totalHrs, forKey: MonitorKeys.TotalHrs.rawValue)
     }
     
-    private func setTraveledDistance(locations: [CLLocation]) {
+      func setTraveledDistance(locations: [CLLocation]) {
         guard locations.first != nil else {return}
         guard let lastLocation = locations.last else {return}
         if _startLocation == nil {return}

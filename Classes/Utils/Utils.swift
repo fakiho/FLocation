@@ -16,7 +16,6 @@ class Utils {
         
         let notificationContent = UNMutableNotificationContent()
         
-        notificationContent.sound = UNNotificationSound.default()
         notificationContent.title = title
         notificationContent.subtitle = subtitle
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)

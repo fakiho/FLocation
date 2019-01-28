@@ -1,0 +1,22 @@
+{
+  "name": "FLocation",
+  "version": "0.1.0",
+  "summary": "A short description of FLocation.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/fakiho/FLocation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fakiho": "ali@fakiho.com"
+  },
+  "source": {
+    "git": "https://github.com/fakiho/FLocation.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FLocation/Classes/**/*"
+}
