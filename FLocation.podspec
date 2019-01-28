@@ -27,7 +27,7 @@ TODO: 'This Location Service to make it easy for you to monitor the user activty
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'fakiho' => 'ali@fakiho.com' }
   s.source           = { :git => 'https://github.com/fakiho/FLocation.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+ s.social_media_url = 'https://twitter.com/F4kiho'
 
   s.ios.deployment_target = '11.0'
 
