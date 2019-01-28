@@ -1,0 +1,6 @@
+use_frameworks!
+target 'FLocation_Tests' do
+  pod 'FLocation', :path => '../'
+  
+  
+end
