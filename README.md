@@ -17,10 +17,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 MAKE SURE THAT YOU INCLUDE IN THE info.plist:
 1. Privacy - Location When In Use Usage Description
 2. Privacy - Location Usage Description
-![alt text](https://raw.githubusercontent.com/fakiho/FLocation/Example/locationImage.png)
+![Location Service](https://github.com/fakiho/FLocation/Example/locationImage.png)
 
 follow this article:
-[a link](https://medium.com/curbside/requesting-location-permissions-in-ios-9e5a3b814a8b)
+[Privacy Location](https://medium.com/curbside/requesting-location-permissions-in-ios-9e5a3b814a8b)
 
 
 ## Installation
